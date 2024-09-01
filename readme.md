@@ -328,7 +328,7 @@ Since the IP address are presentable in form of (for eg.) 194.10.11.5 for IPv4, 
 
 ---
 
-# System Calls :-
+### System Calls :-
 
 Below are the system calls that can be used to access network functionality.
 
@@ -343,4 +343,3 @@ Below are the system calls that can be used to access network functionality.
                     struct addrinfo **res);
     ```
 
-    
