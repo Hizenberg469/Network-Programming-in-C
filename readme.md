@@ -215,19 +215,19 @@ Let's first discuss about the important `struct` and then how we use apis' to es
 > [!IMPORTANT]
 > Because `sockaddr_in6` is larger in size than `sockaddr_in` and we may not know which to use when, we can use `sockaddr_storage` for storing any of the two and type-cast to their respective type.
 
-    ```
-        struct sockaddr_storage{
-            sa_family_t     ss_family;  // address family
+```
+struct sockaddr_storage{
+    sa_family_t     ss_family;  // address family
 
-            /*
-            * all this is padding, implementation specific, ignore it.
-            */
+    /*
+    * all this is padding, implementation specific, ignore it.
+    */
 
-            char        __ss_pad1[_SS_PAD1SIZE];
-            int64_t     __ss_align;
-            char        __ss_pad2[_SS_PAD2SIZE];
-        };
-    ```
+    char        __ss_pad1[_SS_PAD1SIZE];
+    int64_t     __ss_align;
+    char        __ss_pad2[_SS_PAD2SIZE];
+};
+```
 
 1. ss_family :
 
