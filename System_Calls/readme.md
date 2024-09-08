@@ -79,3 +79,13 @@ Below are the system calls that can be used to access network functionality.
 
     freeaddrinfo(servinfo); // free the linked list
     ```
+
+* **socket() :**
+
+  * Purpose :
+
+    Assign a *file descriptor* for accessing OS resources to access network. Defines the type connection it would make to other host.
+
+  * Function Prototype :
+
+    
